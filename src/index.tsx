@@ -1,9 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "./components";
-import { Api } from "./components";
-import { Navbar } from "./components";
+import { Home,Contact,AboutMe } from "./components";
+
+// import {FirebaseAppProvider,AuthCheck} from 'reactfire'
+// import {FirebaseConfig} from './firebaseConfig';
+// import 'firebase/auth';
+// import {Provider} from 'react-redux';
+// import {store} from './redux/store';
+
 
 let myTitle = "Andy's Phone Book";
 
@@ -14,11 +19,25 @@ root.render(
   <React.StrictMode>
     <Router>
       <Switch>
+      
         <Route exact path="/">
           <Home title={myTitle} />
         </Route>
-        <Api />
-        <Navbar />
+        <Route path='/phonebook'>
+          {/* <Phonebook></Phonebook> */}
+        </Route>
+
+        <Route path='/contact'>
+          {/* <Contact></Contact> */}
+          </Route>
+
+          <Route path='/about'>
+          
+          </Route>
+
+
+
+        
       </Switch>
     </Router>
   </React.StrictMode>

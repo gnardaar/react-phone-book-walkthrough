@@ -1,3 +1,5 @@
 export * from './Home';
-export * from './api';
 export * from './Navbar';
+export * from './AboutMe';
+export * from './Contact';
+export * from './Phonebook';
