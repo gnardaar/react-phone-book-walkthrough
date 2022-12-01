@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home,Contact,AboutMe } from "./components";
+import { Home,Contact,AboutMe,Phonebook } from "./components";
 
 // import {FirebaseAppProvider,AuthCheck} from 'reactfire'
 // import {FirebaseConfig} from './firebaseConfig';
@@ -24,14 +24,14 @@ root.render(
           <Home title={myTitle} />
         </Route>
         <Route path='/phonebook'>
-          {/* <Phonebook></Phonebook> */}
+          <Phonebook></Phonebook>
         </Route>
 
         <Route path='/contact'>
-          {/* <Contact></Contact> */}
+          <Contact></Contact>
           </Route>
 
-          <Route path='/about'>
+          <Route path='/AboutMe'>
           
           </Route>
 

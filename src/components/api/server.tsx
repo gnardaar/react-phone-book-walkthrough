@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Api =() => {
+export const server =() => {
   return (
     <div>
       
